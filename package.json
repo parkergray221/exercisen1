@@ -1,0 +1,20 @@
+{
+  "name": "parkerg-exercisen1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.16.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
