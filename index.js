@@ -25,7 +25,7 @@ app.get('/mongodb', function (request, response) {
           var Routes = db.collection('Routes');
 
           //get all Routes with frequency >=1
-          Routes.find({ frequency : { $gte: 0 } }).sort({ name: 1 }).toArray(function (err, docs) {
+          Routes.find({ frequency : { $gte: 1 } }).sort({ name: 1 }).toArray(function (err, docs) {
 
               if(err) throw err;
                                
@@ -43,3 +43,4 @@ app.get('/mongodb', function (request, response) {
 });//end app.get
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
